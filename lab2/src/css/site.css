@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+header, main. footer {
+    display: flow-root;
+}
+
+body {
+    padding: 2em 20%;
+    margin: 0;
+}
+
+pre {
+    padding: 0.5em 1em;
+    white-space: pre-wrap;
+    background-color: #fbfbfb;
+}
+
+img.profile-pic {
+    float: left;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    margin-right: 2em;
+}
