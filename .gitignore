@@ -1,0 +1,10 @@
+[Bb]in/
+dist/
+node_modules/
+private/
+tmp/
+temp/
+build/
+log/
+out/
+*.log
