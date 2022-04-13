@@ -14,22 +14,18 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            revDate: now,
             template: './src/pages/index.html',
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
-            revDate: now,
             template: './src/pages/news.html',
             filename: 'news.html'
         }),
         new HtmlWebpackPlugin({
-            revDate: now,
             template: './src/pages/photo.html',
             filename: 'photo.html'
         }),
         new HtmlWebpackPlugin({
-            revDate: now,
             template: './src/pages/timetable.html',
             filename: 'timetable.html'
         }),
@@ -38,7 +34,6 @@ module.exports = {
                 { from: './src/pages/img', to: './img' }
             ]
         }),
-        new HtmlWebpackPlugin(),
         new CleanWebpackPlugin()
     ]
 }
