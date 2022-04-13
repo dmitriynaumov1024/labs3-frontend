@@ -4,8 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 
-const now = (new Date()).toLocaleString()
-
 module.exports = {  
     entry: { 
         main: path.resolve(__dirname, './src/index.js'),
@@ -15,22 +13,31 @@ module.exports = {
         filename: 'main.js', 
     },
     plugins: [
-        /*new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             revDate: now,
             template: './src/pages/index.html',
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
             revDate: now,
-            template: './src/pages/about.html',
-            filename: 'about.html'
+            template: './src/pages/news.html',
+            filename: 'news.html'
+        }),
+        new HtmlWebpackPlugin({
+            revDate: now,
+            template: './src/pages/photo.html',
+            filename: 'photo.html'
+        }),
+        new HtmlWebpackPlugin({
+            revDate: now,
+            template: './src/pages/timetable.html',
+            filename: 'timetable.html'
         }),
         new CopyPlugin({
             patterns: [
-                { from: './src/css', to: './css' },
-                { from: './src/img', to: './img' }
+                { from: './src/pages/img', to: './img' }
             ]
-        }),*/
+        }),
         new HtmlWebpackPlugin(),
         new CleanWebpackPlugin()
     ]
