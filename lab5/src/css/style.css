@@ -1,0 +1,237 @@
+:root {
+    --color-text-0: #101010;
+    --color-bg-0: #fefefe;
+    --color-bg-1: #fafafa;
+    --color-bg-2: #f8f8f8;
+    --color-bg-3: #f5f5f5;
+    --color-bg-4: #f0f0f0;
+    --color-bg-5: #e9e9e9;
+    --color-accent-0: #effeaf;
+    --color-accent-1: #cefaaf;
+    --color-accent-2: #aef899;
+    --color-accent-3: #89f076;
+    --color-bg-1-t: rgba(255, 255, 255, 0.65);
+}
+
+* {
+    color: var(--color-text-0);
+    font-family: system-ui, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 4em;
+}
+
+body>header {
+    position: sticky;
+    top: 0px;
+    display: block;
+    overflow: hidden;
+    z-index: 99;
+    background-color: var(--color-bg-3);
+    padding: 0;
+    box-shadow: 0 3px 8px rgba(20, 20, 20, 0.1);
+    user-select: none;
+}
+
+header h1 {
+    margin: 0.5em 0;
+    padding: 0 4px;
+}
+
+body>main {
+    padding: 24px 0;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6, main p {
+    margin: 2px 0px 10px;
+}
+
+body>footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h1>a, h2>a, h3>a, h4>a, h5>a, h6>a {
+    line-height: 140%;
+}
+
+a.text-link {
+    color: unset;
+    padding: 0px 4px;
+    background-color: var(--color-accent-0);
+}
+
+a.text-link:visited {
+    color: unset;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.image-link {
+    display: block;
+    text-decoration: none;
+    color: unset;
+}
+
+a.image-link img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.button-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 4px 0px;
+}
+
+.button-bar a.button {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 10px;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font: inherit;
+    font-weight: normal;
+    user-select: none;
+    border-radius: 4px;
+}
+
+.button-bar a.button:hover {
+    background-color: var(--color-accent-1);
+}
+
+.footer-stripe {
+    padding: 16px 0;
+}
+
+.gradient-bg-1::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    z-index: -99;
+    pointer-events: none;
+    background-image: linear-gradient(-45deg,
+        var(--color-bg-4) 0% 6%,
+        var(--color-bg-2) 6% 20%,
+        var(--color-accent-3) 20% 24%,
+        var(--color-accent-2) 24% 28%,
+        var(--color-bg-1) 28% 100%
+    );
+    background-size: cover;
+}
+
+.card {
+    display: block;
+    border: 1px solid var(--color-bg-3);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--color-bg-1-t);
+    backdrop-filter: blur(4px);
+}
+
+a.card {
+    transition-duration: 0.2s;
+}
+
+a.card:hover {
+    box-shadow: 0 5px 8px rgba(20,20,20, 0.2);
+    background-color: var(--color-bg-0);
+}
+
+.news-card {
+    display: block;
+    margin: 0 0 16px;
+}
+
+.news-card img:first-child {
+    float: left;
+    border-radius: 3px;
+    margin-right: 16px;
+}
+
+.padded-5px {
+    padding: 5px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+ul {
+    padding: 0 0 0 16px;
+}
+
+ul li, ol li {
+    margin-bottom: 4px;
+}
+
+table.timetable {
+    display: block;
+}
+
+table.timetable tbody {
+    display: block;
+    width: max(100%, 5in);
+    border: 1px solid var(--color-bg-4);
+}
+
+table.timetable tr {
+    display: flex;
+    flex-direction: row;
+}
+
+table.timetable tr:nth-child(2n) {
+    background-color: var(--color-bg-0);
+}
+table.timetable tr:nth-child(2n+1) {
+    background-color: var(--color-bg-2);
+}
+
+table.timetable tr:first-child {
+    background-color: var(--color-bg-5);
+}
+
+table.timetable tr>* {
+    display: inline-block;
+    border-left: 1px solid var(--color-bg-4);
+    padding: 4px 8px;
+}
+
+table.timetable tr>*:nth-child(1) {
+    width: 10%;
+    border-left: none;
+    text-align: center;
+}
+table.timetable tr>*:nth-child(2) {
+    width: 30%;
+}
+table.timetable tr>*:nth-child(3) {
+    width: 30%;
+}
+table.timetable tr>*:nth-child(4) {
+    width: 30%;
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 6.19in) {
+    .width-container {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .width-3in {
+        width: 100%;
+    }
+
+    img.bio-pic {
+        display: block;
+        margin: 4px auto 12px;
+        width: min(320px, 75vw);
+        height: min(320px, 75vw);
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
