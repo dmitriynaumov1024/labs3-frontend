@@ -195,7 +195,8 @@ table.timetable {
 
 table.timetable tbody {
     display: block;
-    width: max(100%, 5in);
+    width: 100%;
+    min-width: 5in;
     border: 1px solid var(--color-bg-4);
 }
 
