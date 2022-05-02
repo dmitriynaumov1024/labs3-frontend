@@ -1,0 +1,19 @@
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+    * {
+        scrollbar-width: none;
+    }
+}
+
+* {
+    scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+    -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+}
+
+::-moz-scrollbar {
+    display: none;
+}

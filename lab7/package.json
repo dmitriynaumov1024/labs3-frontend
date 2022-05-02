@@ -1,0 +1,34 @@
+{
+  "name": "lab7",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "serve": "webpack serve --mode=development"
+  },
+  "keywords": [],
+  "author": "Dmitriy Naumov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^6.4.1",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^4.5.2",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}

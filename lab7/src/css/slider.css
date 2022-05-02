@@ -1,0 +1,21 @@
+div.slider {
+    overflow-x: scroll;
+}
+
+div.slider>* {
+    display: none;
+}
+
+div.slider>div:first-child {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
+
+div.slider img {
+    display: inline-block;
+    height: 204px;
+    object-fit: cover;
+    margin-right: 12px;
+    border-radius: 12px;
+}

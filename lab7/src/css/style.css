@@ -1,0 +1,104 @@
+:root {
+    --color-text-0: #101010;
+    --color-bg-0: #fefefe;
+    --color-bg-1: #fafafa;
+    --color-bg-2: #f8f8f8;
+    --color-bg-3: #f5f5f5;
+    --color-bg-4: #f0f0f0;
+    --color-bg-5: #e9e9e9;
+    --color-accent-0: #effeaf;
+    --color-accent-1: #cefaaf;
+    --color-accent-2: #aef899;
+    --color-accent-3: #89f076;
+    --color-bg-1-t: rgba(255, 255, 255, 0.65);
+    --color-bg-7-t: rgba(200, 202, 210, 0.33);
+}
+
+* {
+    color: var(--color-text-0);
+    font-family: system-ui, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 4em;
+    background-color: var(--color-bg-1);
+}
+
+body>header {
+    position: sticky;
+    top: 0px;
+    display: block;
+    overflow: hidden;
+    z-index: 99;
+    background-color: var(--color-bg-3);
+    padding: 0;
+    box-shadow: 0 3px 8px rgba(20, 20, 20, 0.1);
+    user-select: none;
+}
+
+header h1 {
+    margin: 0.5em 0;
+    padding: 0 4px;
+}
+
+body>main {
+    padding: 24px 0;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6,
+main p {
+    margin: 2px 0px 10px;
+}
+
+h1>a, h2>a, h3>a, h4>a, h5>a, h6>a {
+    line-height: 140%;
+}
+
+main ol, main ul {
+    margin: 0px 0px 10px;
+    padding: 0 0 0 18px;
+}
+
+code, codeblock {
+    font-family: "Noto Mono", "Consolas", monospace;
+    background-color: var(--color-bg-7-t);
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+code {
+    white-space: pre-wrap;
+}
+
+codeblock {
+    display: block;
+    white-space: pre;
+    overflow-x: auto;
+    margin: 0 0 12px;
+}
+
+main section {
+    padding: 0 0 12px;
+    margin: 0 0 24px;
+    border-bottom: 1px solid var(--color-bg-7-t)
+}
+
+body>footer {
+    position: absolute;
+    background-color: var(--color-bg-3);
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-stripe {
+    padding: 6px 0 10px;
+}
+
+
