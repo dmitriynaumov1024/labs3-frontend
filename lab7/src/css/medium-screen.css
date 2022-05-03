@@ -6,6 +6,10 @@
     .width-3in {
         width: 3in;
     }
+    
+    body>main {
+        padding: 24px 0;
+    }
 
     img.bio-pic {
         float: right;

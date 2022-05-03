@@ -13,6 +13,10 @@
         margin: 0.3em 0;
     }
 
+    body>main {
+        padding: 16px 0 8px;
+    }
+
     .button-bar a.button {
         display: inline-block;
         margin: 0;

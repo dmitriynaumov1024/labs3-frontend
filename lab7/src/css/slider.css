@@ -1,5 +1,5 @@
 div.slider {
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 div.slider>* {
