@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slider demo</title>
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="width-container">
+      <h1>Slider demo</h1>
+    </div>
+  </header>
+  <main>
+    <div class="width-container">
+      <section>
+        <h3>Завдання</h3>
+        <p>1. Використовуючи мову програмування JavaScript (без використання jQuery) та відповідні правила CSS розробити слайдер зображень з можливостями конфігурування:</p>
+        <ul>
+          <li>кількості елементів слайдеру;</li>
+          <li>швидкість анімації зображень;</li>
+          <li>напрям анімації;</li>
+          <li>ширина контейнеру.</li>
+        </ul>
+        <p>2. Розташувати код JS у окремому файлі з назвою sdudent_firstname-slider.js (sdudent_firstname – прізвище студента англійською мовою).</p>
+        <p>3. Передбачити можливість визначення параметрів за допомогою JS об’єкту та параметрів контейнеру (зовнішній блочний елемент) у якому буде розташований слайдер. </p>
+        <p>4. Параметри JS об’єкту повинні мати вищій приорітет ніж параметри визначені  атрибутами data-*.</p>
+        <p>5. Для визначення CSS властивостей слайдеру  передбачити окремий файл css з назвою sdudent_firstname-slider.css.</p>
+      </section>
+      <section>
+        <p>Приклад 1. <code>&lt;div class="slider" data-direction="normal" data-one-duration="3000"&gt;</code></p>
+        <div class="slider" data-direction="normal" data-one-duration="3000">
+          <div>
+            <img src="img/mini-1.jpg">
+            <img src="img/mini-2.jpg">
+            <img src="img/mini-3.jpg">
+            <img src="img/mini-4.jpg">
+            <img src="img/mini-5.jpg">
+            <img src="img/mini-6.jpg">
+          </div>
+        </div>
+      </section>
+      <section>
+        <p>Приклад 2. <code>&lt;div class="slider" data-direction="reverse" data-one-duration="4000"&gt;</code></p>
+        <div class="slider" data-direction="reverse" data-one-duration="4000">
+          <div>
+            <img src="img/mini-4.jpg">
+            <img src="img/mini-3.jpg">
+            <img src="img/mini-1.jpg">
+            <img src="img/mini-8.jpg">
+            <img src="img/mini-7.jpg">
+          </div>
+        </div>
+      </section>
+      <section>
+        <p>Зміна параметрів вже існуючого слайдера (скопіюйте і вставте в консоль)</p>
+        <codeblock>
+document.sliders[0].setOneDuration(6000)
+document.sliders[0].setDirection("reverse")
+
+document.sliders[1].pause()
+        </codeblock>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="width-container footer-stripe">
+      <span>
+        &copy; 2022 Dmitriy Naumov | 
+        <a href="https://github.com/dmitriynaumov1024">My github</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -28,6 +28,7 @@ body {
     min-height: 100vh;
     position: relative;
     padding-bottom: 4em;
+    line-height: 1.5;
     background-color: var(--color-bg-1);
 }
 
@@ -37,7 +38,7 @@ body>header {
     display: block;
     overflow: hidden;
     z-index: 99;
-    background-color: var(--color-bg-3);
+    background-color: var(--color-bg-1);
     padding: 0;
     box-shadow: 0 3px 8px rgba(20, 20, 20, 0.1);
     user-select: none;
